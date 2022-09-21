@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/css/output.css" />
   </head>
-  <body>
-    
+  <body class="">
+    <div class="container w-11/12 m-auto bg-slate-100">
+      <header class="m-8 md:m-20">
+        <h1 class="text-2xl md:text-4xl lg:text-7xl tracking-widest">
+          Tanu Zerebel
+        </h1>
+      </header>
+      <div class="m-4 p-4 list-none">
+        <ul class="bg-slate-500 relative">
+          <span class="absolute md:left-4 text-lg" id="icon"></span>
+          <li class="text-2xl" id="skill"></li>
+        </ul>
+        <p class="text-lg my-4">
+          I am Tanu Zerebel. I am instructor , developer , motivator and content
+          creator. I love educating people and creating educational materials.
+          In January 2019 , I also created a teaching material JavaScript For
+          Everyone. In December 2019 , I created 30Days Of Python challenge and
+          in January 2020 30 Days Of JavaScript challenge.
+        </p>
+      </div>
+      <div
+        class="flex justify-evenly md:justify-around gap-2 flex-wrap items-center"
+      >
+        <div
+          class="bg-orange-100 w-32 h-32 md:w-44 md:h-44 flex items-center text-center justify-center repo"
+        >
+          <span>JAVASCRIPT FOR EVERYONE</span>
+        </div>
+        <div
+          class="bg-orange-100 w-32 h-32 md:w-44 md:h-44 flex items-center text-center justify-center repo"
+        >
+          <span>30DAYS OF PYTHON</span>
+        </div>
+        <div
+          class="bg-orange-100 w-32 h-32 md:w-44 md:h-44 flex items-center text-center justify-center repo"
+        >
+          <span>30DAYS OF JAVASCRIPT</span>
+        </div>
+      </div>
+      <div class="mt-4">
+        <span
+          >The technologies I teach
+          <span id="languages" class="text-2xl font-bold md:text-3xl"></span
+        ></span>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul {
+  #skill {
+    animation: move 1s ease-in forwards infinite alternate;
+  }
+  #icon {
+    animation: fades 1s ease-in-out forwards infinite alternate;
+  }
+}
+#languages {
+  animation: fades 1s ease-in-out forwards infinite alternate;
+}
+@keyframes fades {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+    opacity: 0%;
+  }
+  33% {
+    transform: translate(4%);
+    opacity: 33%;
+  }
+  44% {
+    transform: translate(8%);
+    opacity: 66%;
+  }
+  100% {
+    transform: translateX(10%);
+    opacity: 100%;
+  }
+}
+
+.repo {
+  &:hover {
+    background-color: rgb(236, 179, 75);
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+@media (hover: none) {
+  .repo {
+    background-color: rgb(236, 179, 75);
+    font-weight: 400;
+  }
+}
